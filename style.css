@@ -1,0 +1,27 @@
+body {
+  margin: 0 auto;
+  font-family: 'Barlow', sans-serif;
+}
+
+.navbar-brand {
+  padding: 50px;
+}
+
+.navbar a {
+  color: #a9a9a9;
+}
+
+.navbar-nav {
+  color: #a9a9a9;
+  padding: 50px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #a9a9a9;
+}
+
+/********************************* MAIN CONTENT ******************************/
