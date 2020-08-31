@@ -17,10 +17,10 @@
 
     <title>Say So Portfolio Site</title>
   </head>
-  <body>
+  <body id="page-top">
     <!-- nav for lg screens -->
     <nav class="navbar navbar-expand-xl navbar-light">
-      <a class="navbar-brand page-scroll" href="#">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <img src="images/FINAL_saysologo.png" height="100" alt="Say So Design Logo Whistler">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,10 +32,10 @@
             <a class="nav-link" href="#">PORTFOLIO / <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">ABOUT / </a>
+            <a class="nav-link js-scroll-trigger" href="#about">ABOUT /</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">CONTACT /</a>
+            <a class="nav-link js-scroll-trigger" href="#contact">CONTACT /</a>
           </li>
         </ul>
       </div>
@@ -52,7 +52,6 @@
         <img src="images/coffee-packaging-mockup-set.jpg">
         <img src="images/frame-mockup-whistler-wedding.jpg">
         <img src="images/pemberton-crane-hire-website.jpg">
-        <img src="images/wedding-celebrant-business-card-whistler.jpg">
       </div>
       <div class="column">
         <img src="images/photography-logo-whistler-canada.jpg"/>
@@ -61,7 +60,39 @@
     </div>
     </div>
     <!-- About Content -->
-    
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>About this page</h2>
+            <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
+            <ul>
+              <li>Clickable nav links that smooth scroll to page sections</li>
+              <li>Responsive behavior when clicking nav links perfect for a one page website</li>
+              <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
+              <li>Minimal custom CSS so you are free to explore your own unique design options</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Content -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>About this page</h2>
+            <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
+            <ul>
+              <li>Clickable nav links that smooth scroll to page sections</li>
+              <li>Responsive behavior when clicking nav links perfect for a one page website</li>
+              <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
+              <li>Minimal custom CSS so you are free to explore your own unique design options</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

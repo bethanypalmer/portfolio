@@ -48,9 +48,11 @@ body {
   cursor: pointer;
   transition: 0.3s linear;
 }
+
 .column img:hover {
   filter: grayscale(0);
 }
+
 @media screen and (max-width: 800px) {
   .column {
     flex: 50%;
@@ -64,7 +66,13 @@ body {
     flex: 100%;
     max-width: 100%;
   }
+
   .column img {
     filter: grayscale(0) brightness(1);
   }
+}
+
+/********************************* SECTIONS ******************************/
+section {
+  padding: 150px 0;
 }
