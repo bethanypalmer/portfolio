@@ -29,7 +29,7 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">PORTFOLIO / <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#porfolio">PORTFOLIO / <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">ABOUT /</a>
@@ -41,8 +41,8 @@
       </div>
     </nav>
     <!-- Porfolio Content -->
-    <div class="container-fluid">
-    <div class="row">
+    <div id="porfolio" class="container-fluid">
+    <div class="row-portfolio">
       <div class="column">
         <img src="images/sushi-village-website-mockup.jpg"/>
         <img src="images/leopard-pattern-mockup.jpg"/>
@@ -64,16 +64,24 @@
     <section id="about">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>About this page</h2>
-            <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
-            <ul>
-              <li>Clickable nav links that smooth scroll to page sections</li>
-              <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-              <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-              <li>Minimal custom CSS so you are free to explore your own unique design options</li>
-            </ul>
-          </div>
+        <div class="col-md-6">
+        <img src="images/headshot-bethany-palmer-01.png" height="500" alt="Say So Design Bethany Palmer"/>
+        </div>
+        <div class="col-md-6">
+        <h3>
+          ABOUT /
+         </h3>
+         <p>
+            My travels have taken me to far-flung countries and cultures around the world, and I have been fortunate to experience over 20 snow seasons, between Australia, Austria, Canada and Japan. As I draw on my immersive experiences for inspiration in daily and work-life, the outdoors industry plays a huge part in my life pursuits that have helped forged my direction in life and in career -- to internationally trusted Communications and Production Manager, with a strong creative focus as a qualified Graphic Designer.
+            <br>
+            <br>
+            Past work experience includes Hospitality Management, Events Marketing / Production, Sports / Ski Industry Marketing, Social Media Marketing, E-Commerce and Content Creation as well as being a Graphic Designer and amateur Photographer. My intrinsic involvement in the action sports and outdoors industries has led to my placement as a reliable and experienced comintrinsic communications and production manager for events including BOWL-A-RAMA, Australian Bowl Riding Championships, Australian munications Open of Surfing Beach Bowl and One Hit Wonder Down Under.
+            <br>
+            <br>
+            My strengths in communication and project management have seen me develop working relationships with brands such as Burton Snowboards, VANS, Hurley, Billabong, Diageo (Smirnoff) and MUMM Champagne, and brand partnerships has become an integral part of my skill-set and passion.
+            My forward momentum in the creative industries is in expanding my e-commerce and design abilities, lending my unique and dynamic vision to emerging and established platforms, and fostering talents through engagement with like-minded individuals and teams.
+         </p>
+        </div>
         </div>
       </div>
     </section>
@@ -81,20 +89,78 @@
     <section id="contact">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>About this page</h2>
-            <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
-            <ul>
-              <li>Clickable nav links that smooth scroll to page sections</li>
-              <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-              <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-              <li>Minimal custom CSS so you are free to explore your own unique design options</li>
-            </ul>
-          </div>
+        <div class="col-md-6">
+          <h3>
+            CONTACT /
+           </h3>
+           <p>
+             D E S I G N + B R A N D I N G<br>
+             Brand creation, logos, business cards, flyers, brochures, marketing + promotional material, social media, signage, posters, invitations, websites and digital marketing assets.
+           </p>
+           <p>
+             W E B  D E S I G N<br>
+             Whether its a landing page, an e-commerce site or something more interactive.
+             Complete creation and training so you can manage your website from day one. Squarespace, Wordpress, Shopify, multiple choice of platforms to suit your needs and budget. Digital marketing plan included in all web design budgets.
+           </p>
+           <p>
+            Get in touch for a free consultation and quote.
+            <div class="social-icons">
+              <a href="https://www.instagram.com/iamsnowblind"><i id="social-insta" class="fab fa-instagram fa-3x"></i></a>
+              <a href="https://github.com/bethanypalmer"><i id="social-git" class="fab fa-github fa-3x"></i></a>
+              <a href="mailto:bethany@saysodesign.com"><i id="social-em" class="far fa-envelope fa-3x"></i></a>
+            </div>
+          </p>
+        </div>
+        <div class="col-md-6">
+          <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+            <!-- Name -->
+            <div class="form-group label-floating">
+              <label class="control-label" for="name">Name</label>
+              <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
+              <div class="help-block with-errors"></div>
+            </div>
+            <!-- email -->
+            <div class="form-group label-floating">
+              <label class="control-label" for="email">Email</label>
+              <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email">
+              <div class="help-block with-errors"></div>
+            </div>
+            <!-- Message -->
+            <div class="form-group label-floating">
+                <label for="message" class="control-label">Message</label>
+                <textarea class="form-control" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
+                <div class="help-block with-errors"></div>
+            </div>
+            <!-- Form Submit -->
+            <div class="form-submit mt-5">
+                <button class="btn btn-common" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i> SEND MESSAGE</button>
+                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                <div class="clearfix"></div>
+            </div>
+        </form>
+        </div>
         </div>
       </div>
     </section>
-
+    <!-- FOOTER CONTENT -->
+    <nav class="navbar navbar-expand-xl navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#porfolio">PORTFOLIO / <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">ABOUT /</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">CONTACT /</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
